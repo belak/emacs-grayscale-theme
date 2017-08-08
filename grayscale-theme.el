@@ -161,6 +161,14 @@
    (diff-hl-delete                               :background red   :foreground red+1)
    (diff-hl-insert                               :background green :foreground green+1)
 
+;;;; diff-mode
+   (diff-added                                   :foreground green)
+   (diff-changed                                 :foreground magenta)
+   (diff-removed                                 :foreground red)
+   (diff-header                                  :background bg)
+   (diff-file-header                             :background bg+1)
+   (diff-hunk-header                             :foreground magenta :background bg)
+
 ;;;; flycheck-mode
    (flycheck-error                               :underline (:style wave :color red))
    (flycheck-info                                :underline (:style wave :color yellow))
@@ -178,6 +186,7 @@
    (ido-virtual                                  :foreground fg-1)
 
 ;;;; org-mode
+   ;; TODO: Most of these shouldn't use accent colors.
    (org-agenda-structure                         :foreground magenta)
    (org-agenda-date                              :foreground blue :underline nil)
    (org-agenda-done                              :foreground green)
