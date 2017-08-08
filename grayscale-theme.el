@@ -56,25 +56,27 @@
   ;; been tweaked a bit since then. I've used the duotone idea of
   ;; one main foreground color with muted and brightened
   ;; variants. The highlight colors have been adapted from zenburn.
-  '(:bg       "#2e2e2e"
-    :bg+1     "#383838"
-    :bg+2     "#424242"
-    :bg+3     "#474747"
-    :fg-1     "#868686"
-    :fg       "#b6b6b6"
-    :fg+1     "#e6e6e6"
-    :red-1    "#8c5353"
-    :red      "#bc8383"
-    :red+1    "#dca3a3"
-    :orange   "#dfaf8f"
-    :yellow   "#d0bf8f"
-    :yellow+1 "#f0dfaf"
-    :green    "#5f7f5f"
-    :green+1  "#8fb28f"
-    :blue     "#6ca0a3"
-    :blue+1   "#8cd0d3"
-    :magenta  "#dc8cc3"))
-
+  '(:bg        "#2e2e2e"
+    :bg+1      "#383838"
+    :bg+2      "#424242"
+    :bg+3      "#474747"
+    :fg-1      "#868686"
+    :fg        "#b6b6b6"
+    :fg+1      "#e6e6e6"
+    :red-1     "#8c5353"
+    :red       "#bc8383"
+    :red+1     "#dca3a3"
+    :orange    "#dfaf8f"
+    :yellow    "#d0bf8f"
+    :yellow+1  "#f0dfaf"
+    :green     "#7f9f7f"
+    :green+1   "#8fb28f"
+    :blue      "#6ca0a3"
+    :blue+1    "#94bff3"
+    :cyan      "#8cd0d3"
+    :cyan+1    "#93e0e3"
+    :magenta   "#dc8cc3"
+    :magenta+1 "#ec93d3"))
 
 (deftheme grayscale)
 (grayscale-set-faces
