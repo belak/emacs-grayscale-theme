@@ -51,13 +51,12 @@
                  faces)))
 
 (defvar grayscale-theme-colors
-  '(
-    ;; The bg and fg colors were originally built as a mix between the
-    ;; base16-grayscale and the duotone atom theme colors but have
-    ;; been tweaked a bit since then. I've used the duotone idea of
-    ;; one main foreground color with muted and brightened
-    ;; variants. The highlight colors have been adapted from zenburn.
-    :bg       "#2e2e2e"
+  ;; The bg and fg colors were originally built as a mix between the
+  ;; base16-grayscale and the duotone atom theme colors but have
+  ;; been tweaked a bit since then. I've used the duotone idea of
+  ;; one main foreground color with muted and brightened
+  ;; variants. The highlight colors have been adapted from zenburn.
+  '(:bg       "#2e2e2e"
     :bg+1     "#383838"
     :bg+2     "#424242"
     :bg+3     "#474747"
@@ -74,8 +73,7 @@
     :green+1  "#8fb28f"
     :blue     "#6ca0a3"
     :blue+1   "#8cd0d3"
-    :magenta  "#dc8cc3"
-    ))
+    :magenta  "#dc8cc3"))
 
 
 (deftheme grayscale)
