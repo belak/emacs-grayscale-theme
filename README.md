@@ -30,6 +30,9 @@ be used to emphasize text (like variable names).
 The next set of colors are used only as accent colors and should be used
 sparingly.
 
+TODO: Find a better base `blue` and maybe switch the current blue to
+one of the cyan accents.
+
 * ![#8c5353](https://placehold.it/15/8c5353/000000?text=+) `red-1     #8c5353`
 * ![#bc8383](https://placehold.it/15/bc8383/000000?text=+) `red       #bc8383`
 * ![#dca3a3](https://placehold.it/15/dca3a3/000000?text=+) `red+1     #dca3a3`
