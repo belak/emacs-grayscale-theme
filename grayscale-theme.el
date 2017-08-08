@@ -185,6 +185,34 @@
    (ido-indicator                                :foreground red :background bg+1)
    (ido-virtual                                  :foreground fg-1)
 
+;;;; magit
+   ;; TODO: These are experimental colors and may be changed or removed later
+   (magit-diff-added                             :foreground green)
+   (magit-diff-added-highlight                   :foreground green+1)
+   (magit-diff-base                              :foreground yellow)
+   (magit-diff-base-highlight                    :foreground yellow+1)
+   (magit-diff-conflict-heading                  :background bg+2)
+   (magit-diff-context                           :foreground fg :background bg)
+   (magit-diff-context-highlight                 :background bg+1)
+   (magit-diff-file-heading                      :foreground fg :background bg)
+   (magit-diff-file-heading-highlight            :foreground fg :background bg+1)
+   (magit-diff-file-heading-selection            :foreground red :background bg)
+   (magit-diff-hunk-heading                      :background bg+2)
+   (magit-diff-hunk-heading-highlight            :background bg+3)
+   (magit-diff-hunk-heading-selection            :foreground red :background bg+3)
+   (magit-diff-hunk-region                       :foreground fg :background bg)
+   (magit-diff-lines-boundary                    :foreground orange)
+   (magit-diff-lines-heading                     :foreground orange)
+   (magit-diff-our                               :foreground red)
+   (magit-diff-our-highlight                     :foreground red+1)
+   (magit-diff-removed                           :foreground red)
+   (magit-diff-removed-highlight                 :foreground red+1)
+   (magit-diff-their                             :foreground green)
+   (magit-diff-their-highlight                   :foreground green+1)
+   (magit-diff-whitespace-warning                :inherit trailing-whitespace)
+   (magit-diffstat-added                         :foreground green)
+   (magit-diffstat-removed                       :foreground red)
+
 ;;;; org-mode
    ;; TODO: Most of these shouldn't use accent colors.
    (org-agenda-structure                         :foreground magenta)
