@@ -166,6 +166,10 @@
    (flycheck-info                                :underline (:style wave :color yellow))
    (flycheck-warning                             :underline (:style wave :color orange))
 
+;;;; flyspell-mode
+   (flyspell-duplicate                           :underline (:style wave :color orange))
+   (flyspell-incorrect                           :underline (:style wave :color red))
+
 ;;;; ido-mode
    (ido-subdir                                   :foreground fg-1)
    (ido-first-match                              :foreground orange :weight bold)
