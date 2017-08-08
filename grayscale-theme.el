@@ -212,30 +212,22 @@
    ))
 
 ;; Anything leftover that doesn't fall neatly into a face goes here.
-;; (let ((base00 (plist-get grayscale-theme-colors :base00))
-;;       (base01 (plist-get grayscale-theme-colors :base01))
-;;       (base02 (plist-get grayscale-theme-colors :base02))
-;;       (base03 (plist-get grayscale-theme-colors :base03))
-;;       (base04 (plist-get grayscale-theme-colors :base04))
-;;       (base05 (plist-get grayscale-theme-colors :base05))
-;;       (base06 (plist-get grayscale-theme-colors :base06))
-;;       (base07 (plist-get grayscale-theme-colors :base07))
-;;       (base08 (plist-get grayscale-theme-colors :base08))
-;;       (base09 (plist-get grayscale-theme-colors :base09))
-;;       (base0A (plist-get grayscale-theme-colors :base0A))
-;;       (base0B (plist-get grayscale-theme-colors :base0B))
-;;       (base0C (plist-get grayscale-theme-colors :base0C))
-;;       (base0D (plist-get grayscale-theme-colors :base0D))
-;;       (base0E (plist-get grayscale-theme-colors :base0E))
-;;       (base0F (plist-get grayscale-theme-colors :base0F)))
-;;   (custom-theme-set-variables
-;;    'grayscale
-;;    `(ansi-color-names-vector
-;;      ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
-;;      [,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
-;;    `(ansi-term-color-vector
-;;      ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
-;;      [unspecified ,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])))
+(let ((bg      (plist-get grayscale-theme-colors :bg))
+      (fg      (plist-get grayscale-theme-colors :fg))
+      (red     (plist-get grayscale-theme-colors :red))
+      (green   (plist-get grayscale-theme-colors :green))
+      (yellow  (plist-get grayscale-theme-colors :yellow))
+      (blue    (plist-get grayscale-theme-colors :blue))
+      (magenta (plist-get grayscale-theme-colors :magenta))
+      (cyan    (plist-get grayscale-theme-colors :cyan)))
+  (custom-theme-set-variables
+   'grayscale
+   `(ansi-color-names-vector
+     ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+     [,bg ,red ,green ,yellow ,blue ,magenta ,cyan ,fg])
+   `(ansi-term-color-vector
+     ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+     [unspecified ,bg ,red ,green ,yellow ,blue ,magenta ,cyan ,fg])))
 
 ;;;###autoload
 (and load-file-name
