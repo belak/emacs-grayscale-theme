@@ -210,6 +210,9 @@
    (helm-source-header                           :foreground fg :background bg+1 :weight bold)
    (helm-visible-mark                            :foreground bg :background green)
 
+;;;; hl-line-mode
+   (hl-line                                      :background bg+1)
+
 ;;;; ido-mode
    (ido-subdir                                   :foreground fg-1)
    (ido-first-match                              :foreground orange :weight bold)
