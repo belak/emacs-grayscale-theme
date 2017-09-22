@@ -220,6 +220,22 @@
    (ido-indicator                                :foreground red :background bg+1)
    (ido-virtual                                  :foreground fg-1)
 
+;;;; js2-mode
+   (js2-error                                    :underline (:style wave :color red))
+   (js2-external-variable                        :foreground orange)
+   (js2-function-call                            :foreground fg+1)
+   (js2-function-param                           :foreground fg-1)
+   (js2-instance-member                          :foreground fg+1)
+   (js2-jsdoc-html-tag-name                      :foreground fg+1)
+   (js2-jsdoc-html-tag-delimiter                 :foreground fg-1)
+   (js2-jsdoc-tag                                :foreground fg+1)
+   (js2-jsdoc-type                               :foreground fg)
+   (js2-jsdoc-value                              :foreground fg)
+   (js2-object-property                          :foreground fg+1)
+   (js2-private-member                           :foreground fg+1)
+   (js2-private-function-call                    :foreground fg+1)
+   (js2-warning                                  :underline (:style wave :color orange))
+
 ;;;; magit
    ;; TODO: These are experimental colors and may be changed or removed later
    (magit-diff-added                             :foreground green)
