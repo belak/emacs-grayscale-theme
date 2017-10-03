@@ -1,4 +1,4 @@
-;;; grayscale-theme.el --- simple grayscale theme
+;;; grayscale-theme.el --- A simple grayscale theme
 
 ;; Copyright (C) 2017  Kaleb Elwert
 
