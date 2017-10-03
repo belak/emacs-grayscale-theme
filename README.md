@@ -53,3 +53,7 @@ one of the cyan accents.
 General usage. This one doesn't have any of the accent colors in use.
 
 ![Screenshot 1](screenshot1.png)
+
+The most common accent colors, green and red, being shown in a diff.
+
+![Screenshot 2](screenshot2.png)
