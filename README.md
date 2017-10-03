@@ -47,3 +47,9 @@ one of the cyan accents.
 * ![#93e0e3](https://placehold.it/15/93e0e3/000000?text=+) `#93e0e3 cyan+1`
 * ![#dc8cc3](https://placehold.it/15/dc8cc3/000000?text=+) `#dc8cc3 magenta`
 * ![#ec93d3](https://placehold.it/15/ec93d3/000000?text=+) `#ec93d3 magenta+1`
+
+## Screenshots
+
+General usage. This one doesn't have any of the accent colors in use.
+
+![Screenshot 1](screenshot1.png)
