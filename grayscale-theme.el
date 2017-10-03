@@ -1,18 +1,23 @@
-;; grayscale-theme.el -- simple grayscale theme for emacs
+;;; grayscale-theme.el --- simple grayscale theme
+
+;; Copyright (C) 2017  Kaleb Elwert
 
 ;; Author: Kaleb Elwert <belak@coded.io>
 ;; Maintainer: Kaleb Elwert <belak@coded.io>
 ;; Version: 0.1
-;; Homepage: https://github.com/belak/emacs-grayscale-theme
+;; URL: https://github.com/belak/emacs-grayscale-theme
+;; Keywords: lisp
+
+;; This file is NOT part of GNU Emacs.
 
 ;;; Commentary:
 
-;; This theme is a mostly grayscale theme which uses the zenburn
+;; This theme is a simple grayscale theme which uses the zenburn
 ;; colors as highlights.
 
 ;;; Code:
 
-(defun grayscale-transform-spec (spec colors)
+(defun grayscale-theme-transform-spec (spec colors)
   "Transform a theme `SPEC' into a face spec using `COLORS'."
   (let ((output))
     (while spec
@@ -24,7 +29,7 @@
         ;; Append the transformed element
         (cond
          ((and (memq key '(:box :underline)) (listp value))
-          (setq output (append output (list key (grayscale-transform-spec value colors)))))
+          (setq output (append output (list key (grayscale-theme-transform-spec value colors)))))
          (color
           (setq output (append output (list key color))))
          (t
@@ -36,18 +41,18 @@
     ;; Return the transformed spec
     output))
 
-(defun grayscale-transform-face (spec colors)
+(defun grayscale-theme-transform-face (spec colors)
   "Transform a face `SPEC' into an Emacs theme face definition using `COLORS'."
   (let* ((face             (car spec))
          (definition       (cdr spec)))
 
-    (list face `((t ,(grayscale-transform-spec definition colors))))))
+    (list face `((t ,(grayscale-theme-transform-spec definition colors))))))
 
-(defun grayscale-set-faces (theme-name colors faces)
+(defun grayscale-theme-set-faces (theme-name colors faces)
   "Define the important part of `THEME-NAME' using `COLORS' to map the `FACES' to actual colors."
   (apply 'custom-theme-set-faces theme-name
          (mapcar #'(lambda (face)
-                     (grayscale-transform-face face colors))
+                     (grayscale-theme-transform-face face colors))
                  faces)))
 
 (defvar grayscale-theme-colors
@@ -79,7 +84,7 @@
     :magenta+1 "#ec93d3"))
 
 (deftheme grayscale)
-(grayscale-set-faces
+(grayscale-theme-set-faces
  'grayscale
  grayscale-theme-colors
 
