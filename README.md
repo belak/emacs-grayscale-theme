@@ -1,5 +1,7 @@
 # emacs-grayscale-theme
 
+[![MELPA](https://melpa.org/packages/grayscale-theme-badge.svg)](https://melpa.org/#/grayscale-theme)
+
 This is a simple, mostly grayscale theme, created as a mashup of some ideas of
 the Duotone Atom themes, the base16 emacs themes, and zenburn.
 
