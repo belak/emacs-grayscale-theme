@@ -74,13 +74,13 @@
   ;; been tweaked a bit since then. I've used the duotone idea of
   ;; one main foreground color with muted and brightened
   ;; variants. The highlight colors have been adapted from zenburn.
-  '(:bg        "#2e2e2e"
-    :bg+1      "#383838"
-    :bg+2      "#424242"
-    :bg+3      "#474747"
-    :fg-1      "#868686"
-    :fg        "#b6b6b6"
-    :fg+1      "#e6e6e6"
+  '(:bg        "#1c1c1c"
+    :bg+1      "#262626"
+    :bg+2      "#262626"
+    :bg+3      "#262626"
+    :fg-1      "#6b6b6b"
+    :fg        "#d0d0d0"
+    :fg+1      "#d0d0d0"
     :red-1     "#8c5353"
     :red       "#bc8383"
     :red+1     "#dca3a3"
